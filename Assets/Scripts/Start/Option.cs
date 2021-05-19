@@ -35,4 +35,5 @@ public class Option : MonoBehaviour
     public static int get_s_num(){
         return s_num;
     }
+    //
 }
