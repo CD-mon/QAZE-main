@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 8f9ae5b7914a96a4f90f3dc5523e7037
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Kaisotai
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b6ba0bc6d3c59f74a8824cb31bca270a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
