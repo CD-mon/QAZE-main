@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2021-05-22T21:34:00.641+09:00
-  initializedAtString: 2021-05-22T20:32:06.079+09:00
+  lastUpdatedAtString: 2021-05-23T20:33:46.217+09:00
+  initializedAtString: 2021-05-23T19:55:27.041+09:00
   currentGitRemote:
     name: origin
-    url: https://github.com/CD-mon/QAZE-main.git
+    url: https://github.com/Moet42/QAZE-main.git
     login: 
     user: 
     host: 
@@ -25,14 +25,14 @@ MonoBehaviour:
     token: 
   currentGitBranch:
     name: _getkeyenter-Moet
-    tracking: 
+    tracking: origin/_getkeyenter-Moet
   currentConfigBranch:
     name: _getkeyenter-Moet
     remote:
-      name: 
-      url: 
-    trackingBranch: 
+      name: origin
+      url: https://github.com/Moet42/QAZE-main.git
+    trackingBranch: _getkeyenter-Moet
   currentConfigRemote:
     name: origin
-    url: https://github.com/CD-mon/QAZE-main.git
+    url: https://github.com/Moet42/QAZE-main.git
   currentHead: 

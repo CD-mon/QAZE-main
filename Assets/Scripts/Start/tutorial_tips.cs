@@ -41,7 +41,14 @@ public class tutorial_tips : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
-                this.next_i2();
+                if (t_image1.activeSelf)
+                {
+                    this.next_i2();
+                }
+                else
+                {
+                    this.tuto_close();
+                }
             }
             if (Input.GetKeyDown(KeyCode.Backspace))
             {
