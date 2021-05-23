@@ -34,4 +34,19 @@ public class tutorial_tips : MonoBehaviour
     public static bool get_tutokey(){
         return tuto_key;
     }
+
+    void Update()
+    {
+        if (Tutorial.activeSelf)
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                this.next_i2();
+            }
+            if (Input.GetKeyDown(KeyCode.Backspace))
+            {
+                this.back_i1();
+            }
+        }
+    }
 }
