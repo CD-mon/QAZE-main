@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class if_enter : MonoBehaviour
 {
-    [SerializeField] GameObject _Start,Menu,enter,GS_SE,UI_Score;
+    [SerializeField] GameObject _Start,Menu,enter,GS_SE,UI_Score,mouse_p;
     [SerializeField] AudioClip se_entry,se_on;
     private AudioSource audio;
     private bool played_,b1,b2;
@@ -16,11 +16,12 @@ public class if_enter : MonoBehaviour
     }
     void Update()
     {
-        if( Input.GetKeyDown(KeyCode.Return))
+        if( Input.GetKeyDown(KeyCode.Return)||Input.GetMouseButtonDown(0))
         {
             if(!played_&&b1){
                 _Start.SetActive(false);
                 Menu.SetActive(true);
+                mouse_p.SetActive(true);
                 enter.SetActive(false);
                 audio.PlayOneShot(se_entry);
                 b1 = false;

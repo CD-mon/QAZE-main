@@ -7,7 +7,13 @@ public class music : MonoBehaviour
     [HideInInspector]public bool on = false, did = true;
     [SerializeField]GameObject fade;
     public float musicLong_seconds;
+    private AudioSource gamebgm;
 
+    void Start()
+    {
+        gamebgm = this.gameObject.GetComponent<AudioSource>();
+        gamebgm.volume = option_main.get_gamebgm_num() / 100f;
+    }
     void Update()
     {
         if(Time.timeSinceLevelLoad>=4.0f){
