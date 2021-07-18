@@ -1,4 +1,6 @@
-<img src="![QAZE](https://user-images.githubusercontent.com/76971209/126053430-ef2b9d09-2c59-4b0f-a495-84daff3d6f68.png)" width="320px">
+<div align="center">
+<img src="https://user-images.githubusercontent.com/76971209/126053430-ef2b9d09-2c59-4b0f-a495-84daff3d6f68.png" width="320px">
+</div>
 
 ## DEMO
 
