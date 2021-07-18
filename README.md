@@ -4,54 +4,28 @@
 
 ## DEMO
 
-
+![tutorial_image1](https://user-images.githubusercontent.com/76971209/126053693-479ae164-c391-4a1e-a52c-271436835ddd.jpg)
+![tutorial_image2](https://user-images.githubusercontent.com/76971209/126053708-d2e09137-aabd-4a49-90b6-37cc531a6e8c.jpg)
 
 ## Features
  
-"hoge"のセールスポイントや差別化などを説明する
+「QAZE」はキーボードを駆使した爽快リズムゲームです。エンターキーを押すことでレーンが切り替わるため、レーンの色と降ってくるノーツの色を合わせてながらタイミングよく押すと成功です。「Play」、「Option」が実装されており、Playモードで遊べる楽曲はチュートリアル楽曲として用意した一曲しかありませんが、これからたくさんのオリジナル楽曲を追加していく予定です。また、新たなモードとして、ユーザー自身が譜面を作成できる「CreateMode」も実装予定です。
  
 ## Requirement
  
-"hoge"を動かすのに必要なライブラリなどを列挙する
- 
-* huga 3.5.2
-* hogehuga 1.0.2
- 
-## Installation
- 
-Requirementで列挙したライブラリなどのインストール方法を説明する
- 
-```bash
-pip install huga_package
-```
- 
-## Usage
- 
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
- 
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
-```
+Unity 2020.2.7f1
  
 ## Note
  
-注意点などがあれば書く
+ゲームを終了する際はESCキーを押してください。
  
 ## Author
  
-作成情報を列挙する
- 
-* 作成者
-* 所属
-* E-mail
+* CD-mon
+* Twitter : @mon_da_mon
+* E-mail : mon.da.chocolat@gmail.com
  
 ## License
-ライセンスを明示する
  
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
- 
-社内向けなら社外秘であることを明示してる
- 
-"hoge" is Confidential.
+"QAZE" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+
