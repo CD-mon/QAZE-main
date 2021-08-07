@@ -9,14 +9,14 @@ public class Option_point : MonoBehaviour
     [SerializeField]GameObject display_i,Option_image,t_coverO,UI_Option,GS_SE;
     [SerializeField]AudioClip se_select,se_on;
     private Animator ani;
-    private AudioSource audio;
+    private AudioSource se;
 
     public void Start(){
-        audio = GS_SE.GetComponent<AudioSource>();
+        se = GS_SE.GetComponent<AudioSource>();
     }
 
     public void Option_p_enter(){
-        audio.PlayOneShot(se_select);
+        se.PlayOneShot(se_select);
         Option_image.SetActive(true);
         display_i.GetComponent<Image>().color = new Color(126.0f/255.0f,126.0f/255.0f,0,1.0f);
         ani=t_coverO.GetComponent<Animator>();
@@ -29,7 +29,7 @@ public class Option_point : MonoBehaviour
         ani.SetTrigger("exit");
     }
     public void Option_p_click(){
-        audio.PlayOneShot(se_on);
+        se.PlayOneShot(se_on);
         UI_Option.SetActive(true);
     }
 }

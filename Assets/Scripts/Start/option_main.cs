@@ -60,4 +60,7 @@ public class option_main : MonoBehaviour
     public static int get_gamebgm_num(){
         return gamebgm_num;
     }
+    public static int get_se_num(){
+        return se_num;
+    }
 }

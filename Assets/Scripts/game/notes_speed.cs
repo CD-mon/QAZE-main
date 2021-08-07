@@ -6,10 +6,9 @@ public class notes_speed : MonoBehaviour
 {
     private int speed_num;
     [HideInInspector]public float speed,notes_s;
-    private float notes_m = 9.5f;
     void Start()
     {
-        speed_num = Option.get_s_num();
+        speed_num = option_main.get_s_num();
     }
 
     void Update()

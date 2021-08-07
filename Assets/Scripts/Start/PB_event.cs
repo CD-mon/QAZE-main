@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class PB_event : MonoBehaviour
 {
-    [SerializeField]GameObject display_screen,Play,CreateMode,Option,display,Canvas_tips,play_on,QAZE,QAZE_play,back,Text_play,Canvas,Menu_Play,GS_cdswitch,GS_bgm,GS_SE;
+    [SerializeField]GameObject display_screen,Play,CreateMode,Option,display,Canvas_tips,play_on,QAZE_play,back,Text_play,Canvas,Menu_Play,GS_cdswitch,GS_bgm,GS_SE;
     [SerializeField]AudioClip se_back;
-    private AudioSource audio;
+    private AudioSource se;
     public void Start(){
-        audio = GS_SE.GetComponent<AudioSource>();
+        se = GS_SE.GetComponent<AudioSource>();
     }
     public void PB_p_enter(){
         back.SetActive(true);
@@ -30,11 +30,10 @@ public class PB_event : MonoBehaviour
         Option.SetActive(true);
         display.SetActive(true);
         Canvas_tips.SetActive(true);
-        QAZE.SetActive(true);
         Menu_Play.SetActive(false);
         QAZE_play.SetActive(false);
         GS_cdswitch.SetActive(false);
         GS_bgm.SetActive(true);
-        audio.PlayOneShot(se_back);
+        se.PlayOneShot(se_back);
     }
 }

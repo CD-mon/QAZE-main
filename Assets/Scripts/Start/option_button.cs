@@ -6,10 +6,10 @@ public class option_button : MonoBehaviour
 {
     public GameObject UI_option,GS_SE;
     [SerializeField]AudioClip se_on;
-    private AudioSource audio;
+    private AudioSource se;
     public void back(){
-        audio = GS_SE.GetComponent<AudioSource>();
-        audio.PlayOneShot(se_on);
+        se = GS_SE.GetComponent<AudioSource>();
+        se.PlayOneShot(se_on);
         UI_option.SetActive(false);
     }
 }

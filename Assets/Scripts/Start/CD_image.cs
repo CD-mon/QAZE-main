@@ -11,15 +11,16 @@ public class CD_image : MonoBehaviour
     [SerializeField]Sprite[] sprite;
     [SerializeField]AudioClip[] intro;
     private SpriteRenderer spriteR;
-    private AudioSource audio;
+    private AudioSource gamebgm_demo;
     public int number = 0;
 
     void Start(){
         spriteR = CD_main.GetComponent<SpriteRenderer>();
-        audio = GetComponent<AudioSource>();
+        gamebgm_demo = GetComponent<AudioSource>();
+        gamebgm_demo.volume = option_main.get_gamebgm_num() / 100f;
         spriteR.sprite = sprite[number];
     }
     void Update(){
-        audio.clip = intro[number];
+        gamebgm_demo.clip = intro[number];
     }
 }

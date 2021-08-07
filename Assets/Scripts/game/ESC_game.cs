@@ -7,13 +7,13 @@ using UnityEngine.SceneManagement;
 public class ESC_game : MonoBehaviour
 {
     [SerializeField]GameObject GS_Music,UI_ESC,UI_ESC_Text_;
-    private AudioSource audio;
+    private AudioSource bgm;
     private text_writer cs_tw;
     private music cs_music;
     private bool key = true;
     private float currentT;
     void Start(){
-        audio = GS_Music.GetComponent<AudioSource>();
+        bgm = GS_Music.GetComponent<AudioSource>();
         cs_music = GS_Music.GetComponent<music>();
         cs_tw = UI_ESC_Text_.GetComponent<text_writer>();
         Cursor.visible = false;
@@ -34,16 +34,16 @@ public class ESC_game : MonoBehaviour
         cs_tw.cT = 0;
         cs_tw.dT = 0;
         UI_ESC.SetActive(true);
-        currentT = audio.time;
-        if(cs_music.on)audio.Stop();
+        currentT = bgm.time;
+        if(cs_music.on)bgm.Stop();
         key = false;
         Cursor.visible = true;
     }
     public void resume(){
         UI_ESC.SetActive(false);
         Time.timeScale = 1;
-        audio.time = currentT;
-        if(cs_music.on)audio.Play();
+        bgm.time = currentT;
+        if(cs_music.on)bgm.Play();
         key = true;
         Cursor.visible = false;
     }

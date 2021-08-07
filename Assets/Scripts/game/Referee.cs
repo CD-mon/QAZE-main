@@ -11,7 +11,7 @@ public class Referee : MonoBehaviour
     [SerializeField] GameObject text_grate,text_good,text_miss,SE,ScoreCanvas,GS_geneQAZ;
     [SerializeField] AudioClip se_qaz,se_enterkey;
     private generatorQAZ cs_geneqaz;
-    private AudioSource audio;
+    private AudioSource se;
     private Animator scAni;
     public GameObject GS_ns;
     private notes_speed ns_cs;
@@ -19,7 +19,8 @@ public class Referee : MonoBehaviour
     void Start(){
         ns_cs = GS_ns.GetComponent<notes_speed>();
         reset_score();
-        audio = SE.GetComponent<AudioSource>();
+        se = SE.GetComponent<AudioSource>();
+        se.volume = option_main.get_se_num() / 100f;
         scAni = ScoreCanvas.GetComponent<Animator>();
         cs_geneqaz = GS_geneQAZ.GetComponent<generatorQAZ>();
         JudgTextSwitch(3);
@@ -150,8 +151,8 @@ public class Referee : MonoBehaviour
             if(combo>=HighCombo)HighCombo = combo;
             Judg.text = ""+combo;
             scAni.SetTrigger("on");
-            if(Object>=26)audio.PlayOneShot(se_enterkey);
-            else audio.PlayOneShot(se_qaz);
+            if(Object>=26)se.PlayOneShot(se_enterkey);
+            else se.PlayOneShot(se_qaz);
         }
         //good
         else if( (insT-midT)<=nowT&&nowT<(insT-justT) || (insT+justT)<nowT&&nowT<=(insT+midT) ){
@@ -162,8 +163,8 @@ public class Referee : MonoBehaviour
             if(combo>=HighCombo)HighCombo = combo;
             Judg.text = ""+combo;
             scAni.SetTrigger("on");
-            if(Object>=26)audio.PlayOneShot(se_enterkey);
-            else audio.PlayOneShot(se_qaz);
+            if(Object>=26)se.PlayOneShot(se_enterkey);
+            else se.PlayOneShot(se_qaz);
         }
         //miss
         else{

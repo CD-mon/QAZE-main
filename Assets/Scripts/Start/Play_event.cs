@@ -8,9 +8,9 @@ public class Play_event : MonoBehaviour
     [SerializeField]GameObject display_screen,screen,t_coverP,Play,CreateMode,Option,display,Canvas_tips,play_on,QAZE,QAZE_play,Menu_Play,GS_cdswitch,GS_bgm,GS_SE,ui_tutorial;
     [SerializeField]AudioClip se_select,se_on;
 
-    private AudioSource audio;
+    private AudioSource se;
     public void Start(){
-        audio = GS_SE.GetComponent<AudioSource>();
+        se = GS_SE.GetComponent<AudioSource>();
     }
     private Animator ani;
     
@@ -19,7 +19,7 @@ public class Play_event : MonoBehaviour
         screen.SetActive(false);
         ani=t_coverP.GetComponent<Animator>();
         ani.SetTrigger("play_point");
-        audio.PlayOneShot(se_select);
+        se.PlayOneShot(se_select);
     }
     public void Play_p_exit(){
         display_screen.SetActive(false);
@@ -39,7 +39,7 @@ public class Play_event : MonoBehaviour
         Menu_Play.SetActive(true);
         GS_cdswitch.SetActive(true);
         GS_bgm.SetActive(false);
-        audio.PlayOneShot(se_on);
+        se.PlayOneShot(se_on);
         if(tutorial_tips.get_tutokey()){
             ui_tutorial.SetActive(true);
         }
