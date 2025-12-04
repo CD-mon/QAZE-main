@@ -22,7 +22,6 @@ Unity 2020.2.7f1
 ## Author
  
 * CD-mon
-* Twitter : @mon_da_mon
 * E-mail : mon.da.chocolat@gmail.com
  
 ## License
